@@ -1,0 +1,190 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic');
+
+// Variables
+@montserat: 'Montserrat', sans-serif;
+@raleway: 'Raleway', sans-serif;
+@clearsans: 'Fira Sans', sans-serif;
+
+// Main CSS
+html, body {
+    display: block;
+    height: 100%;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0;
+    background: #000000;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    height: 85px;
+    width: 100%;
+    padding-top: 10px;
+    z-index: 1000;
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        .logo_img {
+            width: 100px;
+            height: auto;
+        }
+    }
+
+    .contacts {
+        display: flex;
+        align-items: flex-start;
+
+        .phones {
+            margin-right: 20px;
+
+            ul {
+                list-style: none;
+
+                li {
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        height: 15px;
+                        width: 15px;
+                        margin-right: 10px;
+                    }
+
+                    .phone_numb {
+                        color: #FFFFFF;
+                        font-family: @montserat;
+                        font-size: 16px;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    .callback {
+                        display: block;
+                        margin-left: auto;
+
+                        color: #FFFFFF;
+                        font-size: 14px;
+                        text-decoration: underline;
+                        font-family: @raleway;
+                    }
+                }
+            }
+        }
+
+        .languages {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+
+            span {
+                color: #FFFFFF;
+                font-family: @clearsans;
+                font-size: 16px;
+                margin-right: 5px;
+            }
+
+            .arrow {
+                width: 7px;
+                height: 4px;
+            }
+        }
+
+        .hamburger {
+            .hamburger_img {
+                width: 30px;
+                height: 15px;
+                margin-top: -5px;
+            }
+        }
+    }
+}
+
+.main_slider {
+    height: 800px;
+
+    .container {
+        position: relative;
+    }
+
+    .carousel-item {
+        img {
+            margin-left: auto;
+        }
+    }
+
+    .carousel-caption {
+        left: 0;
+        text-align: left;
+        bottom: 250px;
+        width: 100%;
+        padding-left: 40px;
+
+        .subtitle {
+            font-family: @clearsans;
+            font-style: italic;
+            font-size: 23px;
+            font-weight: 200;
+            padding-left: 120px;
+            margin-bottom: -10px;
+
+            &::before {
+                content: url(images/main_dots.png);
+                display: block;
+                width: 250px;
+                height: 130px;
+                position: absolute;
+                top: -70px;
+                left: 0;
+            }
+        }
+
+        h1 {
+            font-family: @raleway;
+            font-size: 70px;
+            font-weight: bold;
+        }
+
+        .company {
+            font-family: @clearsans;
+            font-size: 30px;
+            margin-top: 20px;
+        }
+
+        .social {
+            list-style: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            li {
+                margin-bottom: 20px;
+
+                .social_img {
+                    width: 20px;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .carousel-indicators {
+        right: auto;
+        bottom: 0;
+    }
+}
+
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1600px;
+    }
+}
