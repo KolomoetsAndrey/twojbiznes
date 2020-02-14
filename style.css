@@ -471,7 +471,7 @@ body {
 .main_slider .carousel-caption {
   left: 0;
   text-align: left;
-  bottom: 250px;
+  bottom: 150px;
   width: 100%;
   padding-left: 40px;
 }
@@ -514,6 +514,29 @@ body {
 .main_slider .carousel-caption .social li .social_img {
   width: 20px;
   height: auto;
+}
+.main_slider .carousel-caption .main_btn {
+  margin-top: 60px;
+}
+.main_slider .carousel-caption .main_btn .consultation {
+  padding: 18px 31px;
+  color: #FFFFFF;
+  border: 1px solid #F6155E;
+  border-radius: 100px;
+  background-color: #F6155E;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  transition: all 0.5s;
+}
+.main_slider .carousel-caption .main_btn .consultation:hover {
+  text-decoration: none;
+  background-color: #F6155E82;
+  border-color: #F6155E82;
+}
+.main_slider .carousel-caption .mouse_left {
+  position: relative;
+  left: -50px;
+  top: 50%;
 }
 .main_slider .carousel-indicators {
   right: auto;
