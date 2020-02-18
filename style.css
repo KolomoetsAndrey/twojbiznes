@@ -437,6 +437,10 @@ body {
   font-size: 14px;
   text-decoration: underline;
   font-family: 'Raleway', sans-serif;
+  transition: all 0.5s;
+}
+.header .contacts .phones ul li .callback:hover {
+  color: #F6155E;
 }
 .header .contacts .languages {
   display: flex;
@@ -1005,6 +1009,201 @@ body {
 .work .last_stage_row .last_stage_icon img {
   width: 58px;
   height: 36px;
+}
+.about_us {
+  background-image: url(images/about_bg.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 102% 102%;
+  z-index: 1;
+  position: relative;
+}
+.about_us::after {
+  content: url(images/about_big_dots.png);
+  position: absolute;
+  width: 226px;
+  height: 120px;
+  right: 20px;
+  bottom: 40px;
+}
+.about_us h2 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 23px;
+  font-style: italic;
+  color: #FFFFFF;
+  padding-top: 90px;
+  padding-bottom: 30px;
+  position: relative;
+  padding-left: 15px;
+  z-index: 10;
+}
+.about_us h2 span {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: medium;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-style: normal;
+}
+.about_us h2::before {
+  content: url(images/title_rectangle.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 116px;
+  height: 184px;
+  z-index: -1;
+}
+.about_us .about_text {
+  font-family: 'Montserrat', sans-serif;
+  color: #FFFFFF;
+  font-size: 16px;
+  margin-top: 50px;
+}
+.about_us .about_btn {
+  margin-top: 0px;
+  margin-bottom: 140px;
+  z-index: 10;
+}
+.about_us .about_btn .consultation {
+  padding: 18px 31px;
+  color: #FFFFFF;
+  border: 1px solid #F6155E;
+  border-radius: 100px;
+  background-color: #F6155E;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s;
+}
+.about_us .about_btn .consultation:hover {
+  text-decoration: none;
+  background-color: #880b33;
+  border-color: #880b33;
+}
+.about_us .about_btn .consultation::after {
+  content: url(images/about_dots.png);
+  position: absolute;
+  left: -40px;
+  bottom: -40px;
+  width: 120px;
+  height: 65px;
+  z-index: -1;
+}
+.about_us .about_data {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about_us .about_block {
+  width: 50%;
+  text-align: center;
+}
+.about_us .about_block .data {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 110px;
+  background: linear-gradient(125deg, #F6155E 25%, #ff91b5 60%, #FFFFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+}
+.about_us .about_block .data_text {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 22px;
+  padding: 0 30px;
+}
+.footer {
+  background-color: #000000;
+  height: auto;
+}
+.footer .footer_menu_block {
+  justify-content: space-between;
+}
+.footer .top {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #707070;
+}
+.footer .footer_logo_img {
+  width: 70px;
+  height: 50px;
+}
+.footer .footer_menu {
+  display: flex;
+  list-style: none;
+  margin: auto 0;
+  padding: 0;
+}
+.footer .footer_menu li {
+  margin: 0 10px;
+}
+.footer .footer_menu .footer_menu_link {
+  color: #FFFFFF;
+  transition: all 0.5s;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+.footer .footer_menu .footer_menu_link:hover {
+  color: #F6155E;
+  text-decoration: none;
+}
+.footer .bottom {
+  padding: 15px 0;
+}
+.footer .recall {
+  margin: auto 0;
+  display: block;
+}
+.footer .recall .recall_link {
+  padding: 10px 20px;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 100px;
+  background-color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s;
+}
+.footer .recall .recall_link:hover {
+  background-color: #F6155E;
+  border-color: #F6155E;
+  text-decoration: none;
+}
+.footer .copyright {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+  color: #FFFFFF;
+}
+.footer .copyright .developer_link {
+  color: #FFFFFF;
+  transition: all 0.5s;
+}
+.footer .copyright .developer_link:hover {
+  text-decoration: none;
+  color: #F6155E;
+}
+.footer .footer_social {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.footer .footer_social li {
+  margin-left: 20px;
+}
+.footer .footer_social .social_img {
+  width: auto;
+  height: 20px;
 }
 @media (min-width: 2400px) {
   .container {
