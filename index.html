@@ -718,7 +718,72 @@
     <!-- End Testimonials -->
 
     <!-- Contacts -->
-
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>
+                        Если Вы хотите <span>связаться с нами</span>
+                    </h2>
+                </div>
+                <div class="col-md-6 contact_block">
+                    <div class="adress_block">
+                        <p class="block_title">
+                            Адрес
+                            <span><img src="images/location.png" alt="" class="block_title_icon"></span>
+                        </p>
+                        <p class="block_desc">
+                            Германия г. Эссен ул.Боклербаум 23/223
+                        </p>
+                    </div>
+                    <div class="adress_block">
+                        <p class="block_title">
+                            Адрес
+                            <span><img src="images/location.png" alt="" class="block_title_icon"></span>
+                        </p>
+                        <p class="block_desc">
+                            Польша г. Варшава ул.Хмельна 98/23
+                        </p>
+                    </div>
+                    <div class="phone_block">
+                        <p class="block_title">
+                            Телефон
+                            <span><img src="images/phone.png" alt="" class="block_title_icon"></span>
+                        </p>
+                        <p class="block_desc">
+                            +48790490231<br>
+                            +48790490231
+                        </p>
+                    </div>
+                    <div class="email_block">
+                        <p class="block_title">
+                            Email
+                            <span><img src="images/email.png" alt="" class="block_title_icon"></span>
+                        </p>
+                        <p class="block_desc">
+                            biuro@twojbiznes.info
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <form class="contact_form">
+                        <h4 class="form_title text-center">
+                            Свяжитесь с нами
+                        </h4>
+                        <p class="form_desc text-center">
+                            Если у Вас есть вопросы, то напишите нам и мы в ближайшие строки свяжемся с Вам.
+                        </p>
+                        <input type="name" class="name" id="name" placeholder="Ваше имя">
+                        <input type="email" class="email" id="email" placeholder="Ваш email">
+                        <textarea name="ques" class="ques" id="ques" rows="2" placeholder="Ваш вопрос"></textarea>
+                        <p class="therms text-center">Нажав кнопку Вы соглашаетесь на обработку персональных данных.</p>
+                        <input type="button" class="confirm" value="Отправить">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+    </section>
     <!-- End Contacts -->
 
     <!-- Footer -->
@@ -803,6 +868,9 @@
     <!-- End Footer -->
 
     <!-- Scripts -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcbO8I1Ld1f1uTYDn5RnwXqtP9PIknsPA&callback=initMap">
+    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/pipper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

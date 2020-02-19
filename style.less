@@ -1228,6 +1228,158 @@ html, body {
     }
 }
 
+.contacts {
+    h2 {
+        font-family: @clearsans;
+        font-size: 23px;
+        font-style: italic;
+        color: #000000;
+        padding-top: 90px;
+        padding-bottom: 30px;
+        position: relative;
+        padding-left: 15px;
+        z-index: 10;
+
+        span {
+            display: block;
+            font-family: @raleway;
+            font-size: 30px;
+            font-weight: medium;
+            color: #F6155E;
+            text-transform: uppercase;
+            font-style: normal;
+        }
+
+        &::before {
+            content: url(images/title_rectangle.png);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 116px;
+            height: 184px;
+            z-index: -1;
+        }
+    }
+
+    .contact_block {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 90px;
+
+        .adress_block, .phone_block, .email_block {
+            width: 50%;
+            margin-bottom: 30px;
+        }
+
+        .block_title {
+            font-family: @raleway;
+            font-size: 25px;
+            font-weight: 500;
+            color: #000000;
+            position: relative;
+            margin-bottom: 0;
+
+            span {
+                position: absolute;
+                left: -30px;
+
+                img {
+                    height: 23px;
+                    width: auto;
+                }
+            }
+        }
+
+        .block_desc {
+            font-family: @montserat;
+            font-size: 16px;
+            color: #000000;
+            padding-right: 20px;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        padding: 40px 20px;
+        box-shadow: 0 0 12px #00000030;
+        background-color: #FFFFFF;
+        position: relative;
+
+        &::after {
+            content: "";
+            height: 100%;
+            width: 100%;
+            background: #FFFFFF;
+            box-shadow: 0 0 12px #00000030;
+            z-index: -1;
+            position: absolute;
+            right: -20px;
+            top: -25px;
+        }
+
+        .form_title {
+            font-family: @raleway;
+            font-size: 25px;
+            color: #F6155E;
+            padding: 0 45px;
+        }
+
+        .form_desc {
+            font-family: @montserat;
+            font-size: 14px;
+            font-weight: 200;
+            color: #000000;
+            padding: 0 45px 20px 45px;
+        }
+
+        .name, .email, .ques {
+            width: 70%;
+            margin-bottom: 15px;
+            background: #f6155e26;
+            border: 1px solid #FFFFFF;
+            border-radius: 25px;
+            padding: 10px 20px;
+        }
+
+        .therms {
+            font-family: @montserat;
+            font-size: 12px;
+            font-weight: 200;
+            color: #CCCCCC;
+            padding: 0 50px;
+            margin-bottom: 30px;
+        }
+
+        .confirm {
+            padding: 10px 20px;
+            color: #FFFFFF;
+            border: 1px solid #F6155E;
+            border-radius: 100px;
+            background-color: #F6155E;
+            font-family: @montserat;
+            font-size: 16px;
+
+            transition: all 0.5s;
+
+            &:hover {
+                text-decoration: none;
+                background-color: #880b33;
+                border-color: #880b33;
+            }
+        }
+    }
+
+    #map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+    }
+}
+
 @media (min-width: 2400px) {
     .container {
         max-width: 1600px;

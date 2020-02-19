@@ -1439,6 +1439,141 @@ body {
   width: auto;
   height: 20px;
 }
+.contacts h2 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 23px;
+  font-style: italic;
+  color: #000000;
+  padding-top: 90px;
+  padding-bottom: 30px;
+  position: relative;
+  padding-left: 15px;
+  z-index: 10;
+}
+.contacts h2 span {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: medium;
+  color: #F6155E;
+  text-transform: uppercase;
+  font-style: normal;
+}
+.contacts h2::before {
+  content: url(images/title_rectangle.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 116px;
+  height: 184px;
+  z-index: -1;
+}
+.contacts .contact_block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 90px;
+}
+.contacts .contact_block .adress_block,
+.contacts .contact_block .phone_block,
+.contacts .contact_block .email_block {
+  width: 50%;
+  margin-bottom: 30px;
+}
+.contacts .contact_block .block_title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #000000;
+  position: relative;
+  margin-bottom: 0;
+}
+.contacts .contact_block .block_title span {
+  position: absolute;
+  left: -30px;
+}
+.contacts .contact_block .block_title span img {
+  height: 23px;
+  width: auto;
+}
+.contacts .contact_block .block_desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #000000;
+  padding-right: 20px;
+}
+.contacts form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 40px 20px;
+  box-shadow: 0 0 12px #00000030;
+  background-color: #FFFFFF;
+  position: relative;
+}
+.contacts form::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0 0 12px #00000030;
+  z-index: -1;
+  position: absolute;
+  right: -20px;
+  top: -25px;
+}
+.contacts form .form_title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  color: #F6155E;
+  padding: 0 45px;
+}
+.contacts form .form_desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  color: #000000;
+  padding: 0 45px 20px 45px;
+}
+.contacts form .name,
+.contacts form .email,
+.contacts form .ques {
+  width: 70%;
+  margin-bottom: 15px;
+  background: #f6155e26;
+  border: 1px solid #FFFFFF;
+  border-radius: 25px;
+  padding: 10px 20px;
+}
+.contacts form .therms {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+  color: #CCCCCC;
+  padding: 0 50px;
+  margin-bottom: 30px;
+}
+.contacts form .confirm {
+  padding: 10px 20px;
+  color: #FFFFFF;
+  border: 1px solid #F6155E;
+  border-radius: 100px;
+  background-color: #F6155E;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  transition: all 0.5s;
+}
+.contacts form .confirm:hover {
+  text-decoration: none;
+  background-color: #880b33;
+  border-color: #880b33;
+}
+.contacts #map {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
+}
 @media (min-width: 2400px) {
   .container {
     max-width: 1600px;
