@@ -407,6 +407,7 @@ body {
 .header .contacts {
   display: flex;
   align-items: flex-start;
+  height: max-content;
 }
 .header .contacts .phones {
   margin-right: 20px;
@@ -461,6 +462,62 @@ body {
   width: 30px;
   height: 15px;
   margin-top: -5px;
+}
+.header .sidepanel {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 5000;
+  top: 0;
+  right: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  text-align: left;
+  color: #ffffff;
+  border-left: 1px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+.header .sidepanel .closebtn {
+  color: #FFFFFF;
+  font-size: 45px;
+  position: absolute;
+  top: 5px;
+  right: 25px;
+  transition: all 0.5s;
+}
+.header .sidepanel .closebtn:hover {
+  color: #F6155E;
+  text-decoration: none;
+}
+.header .header_menu {
+  display: block;
+  margin: 40px;
+  list-style: none;
+}
+.header .header_menu .header_menu_link {
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+.header .header_menu .header_menu_link:hover {
+  color: #F6155E;
+  text-decoration: none;
+}
+.header .header_social {
+  display: flex;
+  list-style: none;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  margin-top: auto;
+}
+.header .header_social .social_img {
+  width: 20px;
+  height: auto;
+  margin-right: 10px;
 }
 .main_slider {
   height: 800px;

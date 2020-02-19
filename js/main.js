@@ -18,3 +18,18 @@ $(document).ready(function(){
       });
     }
 });
+
+// Main Menu
+function openNav() {
+  var x = window.matchMedia("(max-width:900px)");
+
+  if (x.matches) {
+      document.getElementById("mySidepanel").style.width = "80%";
+  } else {
+      document.getElementById("mySidepanel").style.width = "35%";
+  }
+};
+  
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+};

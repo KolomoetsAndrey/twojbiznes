@@ -42,6 +42,7 @@ html, body {
     .contacts {
         display: flex;
         align-items: flex-start;
+        height: max-content;
 
         .phones {
             margin-right: 20px;
@@ -110,6 +111,72 @@ html, body {
                 height: 15px;
                 margin-top: -5px;
             }
+        }
+    }
+
+    .sidepanel {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 5000;
+        top: 0;
+        right: 0;
+        background-color: #000000;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+        text-align: left;
+        color: #ffffff;
+        border-left: 1px solid #ffffff;
+        display: flex;
+        flex-direction: column;
+
+        .closebtn {
+            color: #FFFFFF;
+            font-size: 45px;
+            position: absolute;
+            top: 5px;
+            right: 25px;
+
+            transition: all 0.5s;
+
+            &:hover {
+                color: #F6155E;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .header_menu {
+        display: block;
+        margin: 40px;
+        list-style: none;
+
+        .header_menu_link {
+            color: #FFFFFF;
+            font-family: @montserat;
+            font-size: 20px;
+
+            transition: all 0.5s;
+
+            &:hover {
+                color: #F6155E;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .header_social {
+        display: flex;
+        list-style: none;
+        margin-left: 40px;
+        margin-bottom: 40px;
+        margin-top: auto;
+
+        .social_img {
+            width: 20px;
+            height: auto;
+            margin-right: 10px;
         }
     }
 }
