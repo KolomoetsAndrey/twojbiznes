@@ -605,6 +605,12 @@ pre code {
   }
 }
 
+/* @media (min-width: 1366px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1250px;
+  }
+} */
+
 .row {
   display: -ms-flexbox;
   display: flex;

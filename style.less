@@ -311,7 +311,6 @@ html, body {
 
 .provide {
     height: auto;
-    margin-bottom: 50px;
     padding-bottom: 50px;
     background-image: url(images/bulb_bg.png);
     background-position: center center;
@@ -339,13 +338,14 @@ html, body {
         }
 
         &::before {
-            content: url(images/title_rectangle.png);
+            content: "";
             position: absolute;
             top: 0;
             left: 0;
             width: 116px;
             height: 184px;
             z-index: -1;
+            background-image: linear-gradient(0deg, #F6155E, #000000);
         }
     }
 
@@ -418,6 +418,36 @@ html, body {
                 }
             }
         }
+    }
+
+    .provide_img_block {
+        padding-top: 50px;
+
+        .provide_img {
+            height: 100%;
+            width: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            border: 1px solid #F6155E;
+        }
+    }
+}
+
+.provide_controls {
+    position: relative;
+    display: flex;
+    left: 40%;
+    bottom: 120px;
+    width: 150px;
+
+    .carousel-control-prev, .carousel-control-next {
+        position: inherit;
+        color: #CCCCCC;
+        width: 50px;
+    }
+
+    .next {
+        transform: rotate(180deg);
     }
 }
 
@@ -562,13 +592,14 @@ html, body {
         }
 
         &::before {
-            content: url(images/title_rectangle.png);
+            content: "";
             position: absolute;
             top: 0;
             left: 0;
             width: 116px;
             height: 184px;
             z-index: -1;
+            background-image: linear-gradient(0deg, #F6155E, #000000);
         }
     }
 
@@ -847,13 +878,14 @@ html, body {
         }
 
         &::before {
-            content: url(images/title_rectangle.png);
+            content: "";
             position: absolute;
             top: 0;
             left: 0;
             width: 116px;
             height: 184px;
             z-index: -1;
+            background-image: linear-gradient(0deg, #F6155E, #000000);
         }
     }
 
@@ -960,13 +992,14 @@ html, body {
         }
 
         &::before {
-            content: url(images/title_rectangle.png);
+            content: "";
             position: absolute;
             top: 0;
             left: 0;
             width: 116px;
             height: 184px;
             z-index: -1;
+            background-image: linear-gradient(0deg, #F6155E, #000000);
         }
     }
 
@@ -1321,13 +1354,14 @@ html, body {
         }
 
         &::before {
-            content: url(images/title_rectangle.png);
+            content: "";
             position: absolute;
             top: 0;
             left: 0;
             width: 116px;
             height: 184px;
             z-index: -1;
+            background-image: linear-gradient(0deg, #F6155E, #000000);
         }
     }
 
@@ -1460,21 +1494,5 @@ html, body {
 @media (min-width: 2400px) {
     .container {
         max-width: 1600px;
-    }
-}
-
-@media (min-width: 1920px) {
-    .header, .main_slider {
-        .container {
-            max-width: 1800px;
-        }
-    }
-
-    .main_slider {
-        .carousel-caption {
-            .mouse_left {
-                left: -75px;
-            }
-        }
     }
 }
