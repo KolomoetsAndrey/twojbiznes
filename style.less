@@ -1176,12 +1176,42 @@ html, body {
         }
     }
 
+    .top_line {
+        width: 100px;
+        height: 2px;
+        border-top: 2px solid #F6155E;
+        display: block;
+        position: relative;
+        left: 50%;
+        margin-left: -50px;
+    }
+
+    .bbtn {
+        border-bottom: 1px solid #FFFFFF;
+    }
+
+    .name {
+        color: #FFFFFF;
+        font-size: 25px;
+        font-weight: 500;
+        font-family: @raleway;
+        padding-top: 30px;
+        margin-bottom: 0;
+    }
+
+    .age {
+        font-family: @raleway;
+        color: #F6155E;
+        font-size: 20px;
+    }
+
     .testimonial {
         padding: 35px 100px;
         font-family: @montserat;
         color: #FFFFFF;
         font-size: 16px;
         text-align: center;
+        margin-bottom: 200px;
     }
 
     .carousel-indicators {
@@ -1189,6 +1219,8 @@ html, body {
         display: flex;
         align-items: center;
         height: 120px;
+        position: relative;
+        top: -280px;
 
         li {
             width: 73px;
@@ -1212,7 +1244,7 @@ html, body {
     .controls {
         display: flex;
         justify-content: space-between;
-        margin-top: -73px;
+        margin-top: -360px;
 
         .carousel-control-prev, .carousel-control-next {
             position: inherit;
