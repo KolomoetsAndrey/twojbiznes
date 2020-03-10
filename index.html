@@ -157,7 +157,7 @@
                                 </li>
                             </ul>
                             <div class="main_btn animated fadeInUp">
-                                <a href="#" class="consultation">
+                                <a href="#" class="consultation" data-toggle="modal" data-target="#callbackmodal">
                                     Получить консультацию
                                 </a>
                             </div>
@@ -218,7 +218,7 @@
                                 </li>
                             </ul>
                             <div class="main_btn animated fadeInUp">
-                                <a href="#" class="consultation">
+                                <a href="#" class="consultation" data-toggle="modal" data-target="#callbackmodal">
                                     Получить консультацию
                                 </a>
                             </div>
@@ -279,7 +279,7 @@
                                 </li>
                             </ul>
                             <div class="main_btn animated fadeInUp">
-                                <a href="#" class="consultation">
+                                <a href="#" class="consultation" data-toggle="modal" data-target="#callbackmodal">
                                     Получить консультацию
                                 </a>
                             </div>
@@ -338,7 +338,7 @@
                                         </li>
                                     </ul>
                                     <div class="provide_btn">
-                                        <a href="#" class="provide_link">
+                                        <a href="#" class="provide_link" data-toggle="modal" data-target="#callbackmodal">
                                             Заказать услугу
                                         </a>
                                     </div>
@@ -381,7 +381,7 @@
                                         </li>
                                     </ul>
                                     <div class="provide_btn">
-                                        <a href="#" class="provide_link">
+                                        <a href="#" class="provide_link" data-toggle="modal" data-target="#callbackmodal">
                                             Заказать услугу
                                         </a>
                                     </div>
@@ -427,7 +427,7 @@
                                         </li>
                                     </ul>
                                     <div class="provide_btn">
-                                        <a href="#" class="provide_link">
+                                        <a href="#" class="provide_link" data-toggle="modal" data-target="#callbackmodal">
                                             Заказать услугу
                                         </a>
                                     </div>
@@ -473,7 +473,7 @@
                                         </li>
                                     </ul>
                                     <div class="provide_btn">
-                                        <a href="#" class="provide_link">
+                                        <a href="#" class="provide_link" data-toggle="modal" data-target="#callbackmodal">
                                             Заказать услугу
                                         </a>
                                     </div>
@@ -532,7 +532,7 @@
                 </div>
                 <div class="col-12">
                     <div class="best_btn text-center">
-                        <a href="#" class="consultation">
+                        <a href="#" class="consultation" data-toggle="modal" data-target="#callbackmodal">
                             Получить консультацию
                         </a>
                     </div>
@@ -675,7 +675,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="about_btn">
-                            <a href="#" class="consultation">
+                            <a href="#" class="consultation" data-toggle="modal" data-target="#callbackmodal">
                                 Получить консультацию
                             </a>
                         </div>
@@ -986,18 +986,17 @@
             <div class="modal-content">
 
                 <form class="faq_form">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                     <h4 class="form_title text-center">
                         Заказать обратный звонок
-                        
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
                     </h4>
                     <p class="form_desc text-center">
                         Оставьте свои данные и мы обязательно перезвоним Вам
                     </p>
                     <input type="name" class="name" id="name" placeholder="Ваше имя">
-                    <input type="email" class="email" id="email" placeholder="Ваш email">
+                    <input type="phone" class="phone" id="phone" placeholder="Ваш телефон">
                     <p class="therms text-center">Нажав кнопку Вы соглашаетесь на обработку персональных данных.</p>
                     <input type="button" class="confirm" value="Отправить">
                 </form>

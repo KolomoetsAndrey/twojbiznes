@@ -1,0 +1,13 @@
+База данных:
+sfdev118_biznes
+Хост:
+localhost
+Логин:
+sfdev118_biznes
+Пароль:
+biznes99
+
+FTP
+Login:	biznes@sfdevelop.com
+Password:	biznes99
+Path:	/home/sfdev118/domains/sfdevelop.com/public_html/biznes

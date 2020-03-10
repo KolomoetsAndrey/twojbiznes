@@ -1,3 +1,10 @@
+/*
+Theme Name:  Twój Biznes
+Author:      SF Develop
+Description: Special WP Theme for Spa Service
+Version:     1.0
+Tags:        WP Theme, Bootstrap 4.3, jQuery 3.4
+*/
 @font-face {
   font-family: 'Fira Sans';
   font-style: italic;
@@ -1772,8 +1779,7 @@ body {
   padding: 0 45px 20px 45px;
 }
 .modal form .name,
-.modal form .email,
-.modal form .ques {
+.modal form .phone {
   width: 70%;
   margin-bottom: 15px;
   background: #f6155e26;
