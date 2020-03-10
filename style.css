@@ -1742,6 +1742,68 @@ body {
 .contacts .map .gm-style .place-card-large {
   display: none !important;
 }
+.modal form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 40px 20px;
+  background-color: #FFFFFF;
+  position: relative;
+}
+.modal form .form_title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  color: #F6155E;
+  padding: 0 45px;
+}
+.modal form .close {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  font-size: 40px;
+}
+.modal form .form_desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  color: #000000;
+  padding: 0 45px 20px 45px;
+}
+.modal form .name,
+.modal form .email,
+.modal form .ques {
+  width: 70%;
+  margin-bottom: 15px;
+  background: #f6155e26;
+  border: 1px solid #FFFFFF;
+  border-radius: 25px;
+  padding: 10px 20px;
+}
+.modal form .therms {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+  color: #CCCCCC;
+  padding: 0 50px;
+  margin-bottom: 30px;
+}
+.modal form .confirm {
+  padding: 10px 20px;
+  color: #FFFFFF;
+  border: 1px solid #F6155E;
+  border-radius: 100px;
+  background-color: #F6155E;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  transition: all 0.5s;
+}
+.modal form .confirm:hover {
+  text-decoration: none;
+  background-color: #880b33;
+  border-color: #880b33;
+}
 @media (max-width: 1300px) {
   .main_slider .carousel-caption .mouse_left {
     left: -60px;

@@ -28,7 +28,7 @@
                                 <p class="phone_numb">+38 067 238 74 74</p>
                             </li>
                             <li>
-                                <a href="#" class="callback">
+                                <a href="#" class="callback" data-toggle="modal" data-target="#callbackmodal">
                                     Заказать звонок
                                 </a>
                             </li>
@@ -930,7 +930,7 @@
                         </li>
                     </ul>
                     <div class="recall">
-                        <a href="#" class="recall_link">Заказать обратный звонок</a>
+                        <a href="#" class="recall_link" data-toggle="modal" data-target="#callbackmodal">Заказать обратный звонок</a>
                     </div>
                 </div>
             </div>
@@ -978,6 +978,34 @@
         </div>
     </footer>
     <!-- End Footer -->
+
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="callbackmodal" tabindex="-1" role="dialog" aria-labelledby="callbackmodalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <form class="faq_form">
+                    <h4 class="form_title text-center">
+                        Заказать обратный звонок
+                        
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </h4>
+                    <p class="form_desc text-center">
+                        Оставьте свои данные и мы обязательно перезвоним Вам
+                    </p>
+                    <input type="name" class="name" id="name" placeholder="Ваше имя">
+                    <input type="email" class="email" id="email" placeholder="Ваш email">
+                    <p class="therms text-center">Нажав кнопку Вы соглашаетесь на обработку персональных данных.</p>
+                    <input type="button" class="confirm" value="Отправить">
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
 
     <!-- Scripts -->
     <script src="js/jquery-3.4.1.js"></script>
