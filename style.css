@@ -404,6 +404,33 @@ body {
 .visible {
   opacity: 1;
 }
+button {
+  outline: none !important;
+}
+.toTop {
+  display: none;
+  font-weight: 800;
+  position: fixed;
+  height: 60px;
+  width: 60px;
+  line-height: 40px;
+  bottom: 50px;
+  right: 50px;
+  z-index: 300;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 0;
+  border-radius: 100%;
+  background-image: linear-gradient(0deg, #F6155E, #000000);
+  background-size: cover;
+  transition: all 0.5s;
+}
+.toTop:hover {
+  text-decoration: none;
+  filter: grayscale(1);
+  cursor: pointer;
+}
 .header {
   position: absolute;
   left: 0;
@@ -631,7 +658,7 @@ body {
   position: relative;
   left: -100px;
   top: -400px;
-  z-index: 100;
+  z-index: -1;
 }
 .main_slider .carousel-caption .mouse_left .mouse {
   width: 20px;
