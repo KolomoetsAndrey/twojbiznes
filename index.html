@@ -22,33 +22,40 @@
     <section class="header" id="header">
         <div class="container">
             <div class="row">
-                <div class="logo">
-                    <a href="#" class="logo_link">
-                        <img src="images/main_logo.png" alt="" class="logo_img">
-                    </a>
-                </div>
-                <div class="contacts">
-                    <div class="phones">
-                        <ul>
-                            <li>
-                                <img src="images/main_phone.png" alt="" class="phone_icon">
-                                <p class="phone_numb">+38 067 238 74 74</p>
-                            </li>
-                            <li>
-                                <a href="#" class="callback" data-toggle="modal" data-target="#callbackmodal">
-                                    Заказать звонок
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="languages">
-                        <span>RU</span>
-                        <img src="images/arrow_down.png" alt="" class="arrow">
-                    </div>
-                    <div class="hamburger">
-                        <a href="#" class="menu_link" onclick="openNav()">
-                            <img src="images/hamburger.png" alt="" class="hamburger_img">
+                <div class="col-12 d-flex">
+                    <div class="logo">
+                        <a href="#" class="logo_link">
+                            <img src="images/main_logo.png" alt="" class="logo_img">
                         </a>
+                    </div>
+                    <div class="contacts">
+                        <div class="phones">
+                            <ul>
+                                <li>
+                                    <img src="images/main_phone.png" alt="" class="phone_icon">
+                                    <p class="phone_numb">+38 067 238 74 74</p>
+                                </li>
+                                <li>
+                                    <a href="#" class="callback" data-toggle="modal" data-target="#callbackmodal">
+                                        Заказать звонок
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="phones_mobile">
+                            <a href="tel:+380672387474" class="phone_link">
+                                <img src="images/main_phone.png" alt="" class="phone_icon">
+                            </a>
+                        </div>
+                        <div class="languages">
+                            <span>RU</span>
+                            <img src="images/arrow_down.png" alt="" class="arrow">
+                        </div>
+                        <div class="hamburger">
+                            <a href="#" class="menu_link" onclick="openNav()">
+                                <img src="images/hamburger.png" alt="" class="hamburger_img">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -119,7 +126,7 @@
         <div id="main_carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/main_bg.png" class="d-block" alt="...">
+                    <img src="images/main_bg.png" class="d-block main_img" alt="...">
                     <div class="container">
                         <div class="carousel-caption">
                             <p class="subtitle animated fadeInDown">
@@ -180,7 +187,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/main_bg.png" class="d-block" alt="...">
+                    <img src="images/main_bg.png" class="d-block main_img" alt="...">
                     <div class="container">
                         <div class="carousel-caption">
                             <p class="subtitle animated fadeInDown">
@@ -241,7 +248,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/main_bg.png" class="d-block" alt="...">
+                    <img src="images/main_bg.png" class="d-block main_img" alt="...">
                     <div class="container">
                         <div class="carousel-caption">
                             <p class="subtitle animated fadeInDown">
@@ -509,7 +516,7 @@
 
     <!-- Best Section -->
     <section class="best" id="best">
-        <div class="container">
+        <div class="container no_slide">
             <div class="row">
                 <div class="col-12 text-center">
                     <h2 class="best_title">
@@ -546,6 +553,85 @@
                 </div>
             </div>
         </div>
+        <div id="best_mobile_slider" class="carousel slide best_mobile_slider" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <h2 class="best_title">
+                                    Наши основные <span>преимущества перед конкурентами</span>
+                                </h2>
+                            </div>
+                            <div class="col-12 text-center best_block best_left">
+                                <img src="images/price.png" alt="" class="best_icon">
+                                <h3>Цена</h3>
+                                <p class="best_desc">
+                                    Отличают нас очень привлекательные цены. Мы предлагаем специальные скидки для семей и для работодателей, которые обращаются к нам с несколькими сотрудниками одновременно.
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="best_btn text-center">
+                                    <a href="#" class="consultation" data-toggle="modal" data-target="#callbackmodal">
+                                        Получить консультацию
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <h2 class="best_title">
+                                    Наши основные <span>преимущества перед конкурентами</span>
+                                </h2>
+                            </div>
+                            <div class="col-12 text-center best_block best_up">
+                                <img src="images/rocket.png" alt="" class="best_icon">
+                                <h3>Оперативность</h3>
+                                <p class="best_desc">
+                                    Наличие возможностей и готовность реализовывать услуги в кратчайшее время, выходные и праздники. Предоставляем четкие и понятные алгоритмы, готовые оформленные документы, бланки, инструкции.
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="best_btn text-center">
+                                    <a href="#" class="consultation" data-toggle="modal" data-target="#callbackmodal">
+                                        Получить консультацию
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <h2 class="best_title">
+                                    Наши основные <span>преимущества перед конкурентами</span>
+                                </h2>
+                            </div>
+                            <div class="col-12 text-center best_block best_right">
+                                <img src="images/warrianty.png" alt="" class="best_icon">
+                                <h3>Гарантия</h3>
+                                <p class="best_desc">
+                                    Наша компания имеет многолетний опыт позволяющий нам брать ответственность за результат нашей работы. Мы гарантируем 100% результат . В противном случае мы обязуемся вернуть Вам деньги.
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="best_btn text-center">
+                                    <a href="#" class="consultation" data-toggle="modal" data-target="#callbackmodal">
+                                        Получить консультацию
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- End Best Section -->
 
@@ -553,13 +639,15 @@
     <section class="work" id="work">
         <div class="container">
             <div class="row">
-                <h2>
-                    Как мы <span>работаем</span>
-                </h2>
+                <div class="col-12">
+                    <h2>
+                        Как мы <span>работаем</span>
+                    </h2>
+                </div>
             </div>
             <div class="steps">
                 <div class="row">
-                    <div class="col-lg-4 offset-lg-5">
+                    <div class="col-lg-4 offset-lg-5 col-12">
                         <div class="work_block work_one">
                             <span class="step_one">01</span>
                             <h3>Ваша Заявка</h3>
@@ -573,7 +661,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 offset-lg-6">
+                    <div class="col-lg-4 offset-lg-6 col-12">
                         <div class="work_block work_two">
                             <span class="step_two">02</span>
                             <h3>Обратная Связь</h3>
@@ -587,7 +675,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 offset-lg-7">
+                    <div class="col-lg-4 offset-lg-7 col-12">
                         <div class="work_block work_three">
                             <span class="step_three">03</span>
                             <h3>Оплата</h3>
@@ -601,7 +689,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 offset-lg-8">
+                    <div class="col-lg-4 offset-lg-8 col-12">
                         <div class="work_block work_four">
                             <span class="step_four">04</span>
                             <h3>Регистрация</h3>
@@ -615,7 +703,7 @@
                     </div>
                 </div>
                 <div class="row last_stage_row">
-                    <div class="col-lg-4 text-center">
+                    <div class="col-lg-4 text-center col-12">
                         <div class="last_stage work_five">
                             <span class="step_five">05</span>
                             <h3>Готово</h3>
@@ -635,9 +723,11 @@
     <section class="about_us" id="about_us">
         <div class="container">
             <div class="row">
-                <h2>
-                    Все что вам <span>необходимо знать о нас</span>
-                </h2>
+                <div class="col-12">
+                    <h2>
+                        Все что вам <span>необходимо знать о нас</span>
+                    </h2>
+                </div>
             </div>
             <div class="row">
                 <div class="col-lg-5">
@@ -679,13 +769,13 @@
                         </p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="about_btn">
-                            <a href="#" class="consultation" data-toggle="modal" data-target="#callbackmodal">
-                                Получить консультацию
-                            </a>
-                        </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="about_btn">
+                        <a href="#" class="consultation" data-toggle="modal" data-target="#callbackmodal">
+                            Получить консультацию
+                        </a>
                     </div>
                 </div>
             </div>
@@ -697,9 +787,11 @@
     <section class="faq" id="faq">
         <div class="container">
             <div class="row">
-                <h2>
-                    Часто <span>задаваемые вопросы</span>
-                </h2>
+                <div class="col-12">
+                    <h2>
+                        Часто <span>задаваемые вопросы</span>
+                    </h2>
+                </div>
             </div>
             <div class="row">
                 <div class="col-lg-7 collapsed">
@@ -765,6 +857,7 @@
                                 <p class="testimonial">
                                     Моя мама ездила на работу в Германию сиделкой пол года назад, мы сначала пытались найти что-то сами через знакомых за границей , потом я начала искать варианты самостоятельно через интернет. Конечно очень недоверчиво отношусь к этим всем фирмам которые предлагают услуги по трудоустройству. Обзвонила кучу мест, в итоге адекватно и понятно разъяснили что да как в двух фирмах. Короче остановились на одной, фирма польская но есть офис в Украине мы приехали познакомились , нам предоставили все документы. Так что если компания честная всегда без затруднений отвечают на все вопросы. Мы взяли время на раздумья и решили что попробуем. Единственное что нас смущало, что мама плохо знала немецкий , на уровне школы. В фирме предложили пройти курсы чтобы освежить знания. После курсов мама поехала в Германию ухаживать за пожилой женщиной. Все было хорошо, вообще ни каких проблем. Заплатили, подсказали все. Правда я редко пишу отзывы но тут прямо захотелось, так как реально помогли , планируем ещё поехать. Всем рекомендую попробовать обратится в Twoj Biznes, я нашла их через сайт ещё попомоему есть у них фесбук
                                 </p>
+                                <img src="images/t1.png" alt="" class="testimonial_desc_img">
                             </div>
                             <div class="col-12 text-center">
                                 <span class="top_line"></span>
@@ -782,6 +875,7 @@
                                 <p class="testimonial">
                                     Моя мама ездила на работу в Германию сиделкой пол года назад, мы сначала пытались найти что-то сами через знакомых за границей , потом я начала искать варианты самостоятельно через интернет. Конечно очень недоверчиво отношусь к этим всем фирмам которые предлагают услуги по трудоустройству. Обзвонила кучу мест, в итоге адекватно и понятно разъяснили что да как в двух фирмах. Короче остановились на одной, фирма польская но есть офис в Украине мы приехали познакомились , нам предоставили все документы. Так что если компания честная всегда без затруднений отвечают на все вопросы. Мы взяли время на раздумья и решили что попробуем. Единственное что нас смущало, что мама плохо знала немецкий , на уровне школы. В фирме предложили пройти курсы чтобы освежить знания. После курсов мама поехала в Германию ухаживать за пожилой женщиной. Все было хорошо, вообще ни каких проблем. Заплатили, подсказали все. Правда я редко пишу отзывы но тут прямо захотелось, так как реально помогли , планируем ещё поехать. Всем рекомендую попробовать обратится в Twoj Biznes, я нашла их через сайт ещё попомоему есть у них фесбук
                                 </p>
+                                <img src="images/t1.png" alt="" class="testimonial_desc_img">
                             </div>
                             <div class="col-12 text-center">
                                 <span class="top_line"></span>
@@ -799,6 +893,7 @@
                                 <p class="testimonial">
                                     Моя мама ездила на работу в Германию сиделкой пол года назад, мы сначала пытались найти что-то сами через знакомых за границей , потом я начала искать варианты самостоятельно через интернет. Конечно очень недоверчиво отношусь к этим всем фирмам которые предлагают услуги по трудоустройству. Обзвонила кучу мест, в итоге адекватно и понятно разъяснили что да как в двух фирмах. Короче остановились на одной, фирма польская но есть офис в Украине мы приехали познакомились , нам предоставили все документы. Так что если компания честная всегда без затруднений отвечают на все вопросы. Мы взяли время на раздумья и решили что попробуем. Единственное что нас смущало, что мама плохо знала немецкий , на уровне школы. В фирме предложили пройти курсы чтобы освежить знания. После курсов мама поехала в Германию ухаживать за пожилой женщиной. Все было хорошо, вообще ни каких проблем. Заплатили, подсказали все. Правда я редко пишу отзывы но тут прямо захотелось, так как реально помогли , планируем ещё поехать. Всем рекомендую попробовать обратится в Twoj Biznes, я нашла их через сайт ещё попомоему есть у них фесбук
                                 </p>
+                                <img src="images/t1.png" alt="" class="testimonial_desc_img">
                             </div>
                             <div class="col-12 text-center">
                                 <span class="top_line"></span>
@@ -838,7 +933,7 @@
     <section class="contacts" id="contacts">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-12">
                     <h2>
                         Если Вы хотите <span>связаться с нами</span>
                     </h2>
@@ -945,41 +1040,43 @@
         <div class="bottom">
             <div class="container">
                 <div class="row footer_menu_block">
-                    <p class="copyright">
-                        Twój Biznes © Copyright 2020. Разработано <a href="#" class="developer_link">SFdevelop</a>
-                    </p>
-                    <ul class="footer_social">
-                        <li>
-                            <a href="#" class="footer_social_link">
-                                <img src="images/vk.png" alt="" class="social_img">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer_social_link">
-                                <img src="images/fb.png" alt="" class="social_img">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer_social_link">
-                                <img src="images/insta.png" alt="" class="social_img">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer_social_link">
-                                <img src="images/tele.png" alt="" class="social_img">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer_social_link">
-                                <img src="images/whats.png" alt="" class="social_img">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer_social_link">
-                                <img src="images/imo.png" alt="" class="social_img">
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="col-12">
+                        <p class="copyright">
+                            Twój Biznes © Copyright 2020. Разработано <a href="#" class="developer_link">SFdevelop</a>
+                        </p>
+                        <ul class="footer_social">
+                            <li>
+                                <a href="#" class="footer_social_link">
+                                    <img src="images/vk.png" alt="" class="social_img">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer_social_link">
+                                    <img src="images/fb.png" alt="" class="social_img">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer_social_link">
+                                    <img src="images/insta.png" alt="" class="social_img">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer_social_link">
+                                    <img src="images/tele.png" alt="" class="social_img">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer_social_link">
+                                    <img src="images/whats.png" alt="" class="social_img">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer_social_link">
+                                    <img src="images/imo.png" alt="" class="social_img">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

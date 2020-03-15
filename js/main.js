@@ -1,5 +1,5 @@
 $('.carousel').carousel({
-    interval: 5000
+    interval: 25000
 });
 
 $(document).ready(function() {
@@ -208,3 +208,13 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+$(document).ready(function() {
+  var ww = 	$(window).width();
+  if (ww <= 800) {
+    var myDiv = $('.testimonials .testimonial');
+    myDiv.text(myDiv.text().substring(0,300) + '...')
+  } else {
+    return;
+  }
+});
