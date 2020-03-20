@@ -1,132 +1,11 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>...</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <!--ToTop-->
-    <button class="toTop animated fadeInRight" onclick="topFunction()" id="toTop">
-        <img src="images/arrow_top.png" alt="" class="arrow_top">
-    </button>
-    <!--End ToTop-->
-    
-    <!-- Header -->
-    <section class="header" id="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 d-flex">
-                    <div class="logo">
-                        <a href="#" class="logo_link">
-                            <img src="images/main_logo.png" alt="" class="logo_img">
-                        </a>
-                    </div>
-                    <div class="contacts">
-                        <div class="phones">
-                            <ul>
-                                <li>
-                                    <img src="images/main_phone.png" alt="" class="phone_icon">
-                                    <p class="phone_numb">+38 067 238 74 74</p>
-                                </li>
-                                <li>
-                                    <a href="#" class="callback" data-toggle="modal" data-target="#callbackmodal">
-                                        Заказать звонок
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="phones_mobile">
-                            <a href="tel:+380672387474" class="phone_link">
-                                <img src="images/main_phone.png" alt="" class="phone_icon">
-                            </a>
-                        </div>
-                        <div class="languages">
-                            <span>RU</span>
-                            <img src="images/arrow_down.png" alt="" class="arrow">
-                        </div>
-                        <div class="hamburger">
-                            <a href="#" class="menu_link" onclick="openNav()">
-                                <img src="images/hamburger.png" alt="" class="hamburger_img">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="mySidepanel" class="sidepanel">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <ul class="header_menu">
-                <li>
-                    <a href="#provide" class="header_menu_link">Услуги</a>
-                </li>
-                <li>
-                    <a href="#best" class="header_menu_link">Почему мы</a>
-                </li>
-                <li>
-                    <a href="#work" class="header_menu_link">Как мы работаем</a>
-                </li>
-                <li>
-                    <a href="#about_us" class="header_menu_link">О нас</a>
-                </li>
-                <li>
-                    <a href="#faq" class="header_menu_link">Частые вопросы</a>
-                </li>
-                <li>
-                    <a href="#testimonials" class="header_menu_link">Отзывы</a>
-                </li>
-                <li>
-                    <a href="#contacts" class="header_menu_link">Контакты</a>
-                </li>
-            </ul>
-            <ul class="header_social">
-                <li>
-                    <a href="#" class="header_social_link">
-                        <img src="images/vk.png" alt="" class="social_img">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="header_social_link">
-                        <img src="images/fb.png" alt="" class="social_img">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="header_social_link">
-                        <img src="images/insta.png" alt="" class="social_img">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="header_social_link">
-                        <img src="images/tele.png" alt="" class="social_img">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="header_social_link">
-                        <img src="images/whats.png" alt="" class="social_img">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="header_social_link">
-                        <img src="images/imo.png" alt="" class="social_img">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <!-- End Header -->
 
     <!-- Main Slider -->
     <div class="main_slider" id="main_slider">
         <div id="main_carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/main_bg.png" class="d-block main_img" alt="...">
+                    <img src="<?php echo bloginfo('template_url'); ?>/images/main_bg.png" class="d-block main_img" alt="...">
                     <div class="container">
                         <div class="carousel-caption">
                             <p class="subtitle animated fadeInDown">
@@ -141,32 +20,32 @@
                             <ul class="social animated fadeInRight">
                                 <li>
                                     <a href="#" class="social_link">
-                                        <img src="images/vk.png" alt="" class="social_img">
+                                        <img src="<?php echo bloginfo('template_url'); ?>/images/vk.png" alt="" class="social_img">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="social_link">
-                                        <img src="images/fb.png" alt="" class="social_img">
+                                        <img src="<?php echo bloginfo('template_url'); ?>/images/fb.png" alt="" class="social_img">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="social_link">
-                                        <img src="images/insta.png" alt="" class="social_img">
+                                        <img src="<?php echo bloginfo('template_url'); ?>/images/insta.png" alt="" class="social_img">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="social_link">
-                                        <img src="images/tele.png" alt="" class="social_img">
+                                        <img src="<?php echo bloginfo('template_url'); ?>/images/tele.png" alt="" class="social_img">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="social_link">
-                                        <img src="images/whats.png" alt="" class="social_img">
+                                        <img src="<?php echo bloginfo('template_url'); ?>/images/whats.png" alt="" class="social_img">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="social_link">
-                                        <img src="images/imo.png" alt="" class="social_img">
+                                        <img src="<?php echo bloginfo('template_url'); ?>/images/imo.png" alt="" class="social_img">
                                     </a>
                                 </li>
                             </ul>
@@ -177,11 +56,11 @@
                             </div>
                             <div class="slide_numbers animated fadeInUp">
                                 <span class="carousel-number"></span>
-                                <img src="images/line.png" alt="" class="line">
+                                <img src="<?php echo bloginfo('template_url'); ?>/images/line.png" alt="" class="line">
                                 <span class="last-number"></span>
                             </div>
                             <div class="mouse_left animated fadeInLeft">
-                                <img src="images/main_mouse.png" alt="" class="mouse">
+                                <img src="<?php echo bloginfo('template_url'); ?>/images/main_mouse.png" alt="" class="mouse">
                             </div>
                         </div>
                     </div>
@@ -202,32 +81,32 @@
                             <ul class="social animated fadeInRight">
                                 <li>
                                     <a href="#" class="social_link">
-                                        <img src="images/vk.png" alt="" class="social_img">
+                                        <img src="<?php echo bloginfo('template_url'); ?>/images/vk.png" alt="" class="social_img">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="social_link">
-                                        <img src="images/fb.png" alt="" class="social_img">
+                                        <img src="<?php echo bloginfo('template_url'); ?>/images/fb.png" alt="" class="social_img">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="social_link">
-                                        <img src="images/insta.png" alt="" class="social_img">
+                                        <img src="<?php echo bloginfo('template_url'); ?>/images/insta.png" alt="" class="social_img">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="social_link">
-                                        <img src="images/tele.png" alt="" class="social_img">
+                                        <img src="<?php echo bloginfo('template_url'); ?>/images/tele.png" alt="" class="social_img">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="social_link">
-                                        <img src="images/whats.png" alt="" class="social_img">
+                                        <img src="<?php echo bloginfo('template_url'); ?>/images/whats.png" alt="" class="social_img">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="social_link">
-                                        <img src="images/imo.png" alt="" class="social_img">
+                                        <img src="<?php echo bloginfo('template_url'); ?>/images/imo.png" alt="" class="social_img">
                                     </a>
                                 </li>
                             </ul>
@@ -238,17 +117,17 @@
                             </div>
                             <div class="slide_numbers animated fadeInUp">
                                 <span class="carousel-number"></span>
-                                <img src="images/line.png" alt="" class="line">
+                                <img src="<?php echo bloginfo('template_url'); ?>/images/line.png" alt="" class="line">
                                 <span class="last-number"></span>
                             </div>
                             <div class="mouse_left animated fadeInLeft">
-                                <img src="images/main_mouse.png" alt="" class="mouse">
+                                <img src="<?php echo bloginfo('template_url'); ?>/images/main_mouse.png" alt="" class="mouse">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/main_bg.png" class="d-block main_img" alt="...">
+                    <img src="<?php echo bloginfo('template_url'); ?>/images/main_bg.png" class="d-block main_img" alt="...">
                     <div class="container">
                         <div class="carousel-caption">
                             <p class="subtitle animated fadeInDown">
@@ -263,32 +142,32 @@
                             <ul class="social animated fadeInRight">
                                 <li>
                                     <a href="#" class="social_link">
-                                        <img src="images/vk.png" alt="" class="social_img">
+                                        <img src="<?php echo bloginfo('template_url'); ?>/images/vk.png" alt="" class="social_img">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="social_link">
-                                        <img src="images/fb.png" alt="" class="social_img">
+                                        <img src="<?php echo bloginfo('template_url'); ?>/images/fb.png" alt="" class="social_img">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="social_link">
-                                        <img src="images/insta.png" alt="" class="social_img">
+                                        <img src="<?php echo bloginfo('template_url'); ?>/images/insta.png" alt="" class="social_img">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="social_link">
-                                        <img src="images/tele.png" alt="" class="social_img">
+                                        <img src="<?php echo bloginfo('template_url'); ?>/images/tele.png" alt="" class="social_img">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="social_link">
-                                        <img src="images/whats.png" alt="" class="social_img">
+                                        <img src="<?php echo bloginfo('template_url'); ?>/images/whats.png" alt="" class="social_img">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="social_link">
-                                        <img src="images/imo.png" alt="" class="social_img">
+                                        <img src="<?php echo bloginfo('template_url'); ?>/images/imo.png" alt="" class="social_img">
                                     </a>
                                 </li>
                             </ul>
@@ -299,11 +178,11 @@
                             </div>
                             <div class="slide_numbers animated fadeInUp">
                                 <span class="carousel-number"></span>
-                                <img src="images/line.png" alt="" class="line">
+                                <img src="<?php echo bloginfo('template_url'); ?>/images/line.png" alt="" class="line">
                                 <span class="last-number"></span>
                             </div>
                             <div class="mouse_left animated fadeInLeft">
-                                <img src="images/main_mouse.png" alt="" class="mouse">
+                                <img src="<?php echo bloginfo('template_url'); ?>/images/main_mouse.png" alt="" class="mouse">
                             </div>
                         </div>
                     </div>
@@ -331,7 +210,7 @@
                                     </h3>
                                     <div class="provide_mobile_img">
                                         <div class="provide_img_block_mobile">
-                                            <img src="images/provide_01_mob.png" alt="" class="provide_img_mobile">
+                                            <img src="<?php echo bloginfo('template_url'); ?>/images/provide_01_mob.png" alt="" class="provide_img_mobile">
                                         </div>
                                     </div>
                                     <ul>
@@ -360,7 +239,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="provide_img_block">
-                                    <img src="images/provide_img.png" alt="" class="provide_img">
+                                    <img src="<?php echo bloginfo('template_url'); ?>/images/provide_img.png" alt="" class="provide_img">
                                 </div>
                             </div>
                         </div>
@@ -380,7 +259,7 @@
                                     </h3>
                                     <div class="provide_mobile_img">
                                         <div class="provide_img_block_mobile">
-                                            <img src="images/provide_01_mob.png" alt="" class="provide_img_mobile">
+                                            <img src="<?php echo bloginfo('template_url'); ?>/images/provide_01_mob.png" alt="" class="provide_img_mobile">
                                         </div>
                                     </div>
                                     <ul>
@@ -403,7 +282,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="provide_img_block">
-                                    <img src="images/provide_img2.png" alt="" class="provide_img">
+                                    <img src="<?php echo bloginfo('template_url'); ?>/images/provide_img2.png" alt="" class="provide_img">
                                 </div>
                             </div>
                         </div>
@@ -423,7 +302,7 @@
                                     </h3>
                                     <div class="provide_mobile_img">
                                         <div class="provide_img_block_mobile">
-                                            <img src="images/provide_01_mob.png" alt="" class="provide_img_mobile">
+                                            <img src="<?php echo bloginfo('template_url'); ?>/images/provide_01_mob.png" alt="" class="provide_img_mobile">
                                         </div>
                                     </div>
                                     <ul>
@@ -449,7 +328,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="provide_img_block">
-                                    <img src="images/provide_img3.png" alt="" class="provide_img">
+                                    <img src="<?php echo bloginfo('template_url'); ?>/images/provide_img3.png" alt="" class="provide_img">
                                 </div>
                             </div>
                         </div>
@@ -469,7 +348,7 @@
                                     </h3>
                                     <div class="provide_mobile_img">
                                         <div class="provide_img_block_mobile">
-                                            <img src="images/provide_01_mob.png" alt="" class="provide_img_mobile">
+                                            <img src="<?php echo bloginfo('template_url'); ?>/images/provide_01_mob.png" alt="" class="provide_img_mobile">
                                         </div>
                                     </div>
                                     <ul>
@@ -495,7 +374,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="provide_img_block">
-                                    <img src="images/provide_img4.png" alt="" class="provide_img">
+                                    <img src="<?php echo bloginfo('template_url'); ?>/images/provide_img4.png" alt="" class="provide_img">
                                 </div>
                             </div>
                         </div>
@@ -504,10 +383,10 @@
             </div>
             <div class="provide_controls">
                 <a class="carousel-control-prev" href="#provide_slider" role="button" data-slide="prev">
-                    <img src="images/car_control.png" alt="" class="prev">
+                    <img src="<?php echo bloginfo('template_url'); ?>/images/car_control.png" alt="" class="prev">
                 </a>
                 <a class="carousel-control-next" href="#provide_slider" role="button" data-slide="next">
-                    <img src="images/car_control.png" alt="" class="next">
+                    <img src="<?php echo bloginfo('template_url'); ?>/images/car_control.png" alt="" class="next">
                 </a>
             </div>
         </div>
@@ -524,21 +403,21 @@
                     </h2>
                 </div>
                 <div class="col-4 text-center best_block best_left">
-                    <img src="images/price.png" alt="" class="best_icon">
+                    <img src="<?php echo bloginfo('template_url'); ?>/images/price.png" alt="" class="best_icon">
                     <h3>Цена</h3>
                     <p class="best_desc">
                         Отличают нас очень привлекательные цены. Мы предлагаем специальные скидки для семей и для работодателей, которые обращаются к нам с несколькими сотрудниками одновременно.
                     </p>
                 </div>
                 <div class="col-4 text-center best_block best_up">
-                    <img src="images/rocket.png" alt="" class="best_icon">
+                    <img src="<?php echo bloginfo('template_url'); ?>/images/rocket.png" alt="" class="best_icon">
                     <h3>Оперативность</h3>
                     <p class="best_desc">
                         Наличие возможностей и готовность реализовывать услуги в кратчайшее время, выходные и праздники. Предоставляем четкие и понятные алгоритмы, готовые оформленные документы, бланки, инструкции.
                     </p>
                 </div>
                 <div class="col-4 text-center best_block best_right">
-                    <img src="images/warrianty.png" alt="" class="best_icon">
+                    <img src="<?php echo bloginfo('template_url'); ?>/images/warrianty.png" alt="" class="best_icon">
                     <h3>Гарантия</h3>
                     <p class="best_desc">
                         Наша компания имеет многолетний опыт позволяющий нам брать ответственность за результат нашей работы. Мы гарантируем 100% результат . В противном случае мы обязуемся вернуть Вам деньги.
@@ -564,7 +443,7 @@
                                 </h2>
                             </div>
                             <div class="col-12 text-center best_block best_left">
-                                <img src="images/price.png" alt="" class="best_icon">
+                                <img src="<?php echo bloginfo('template_url'); ?>/images/price.png" alt="" class="best_icon">
                                 <h3>Цена</h3>
                                 <p class="best_desc">
                                     Отличают нас очень привлекательные цены. Мы предлагаем специальные скидки для семей и для работодателей, которые обращаются к нам с несколькими сотрудниками одновременно.
@@ -589,7 +468,7 @@
                                 </h2>
                             </div>
                             <div class="col-12 text-center best_block best_up">
-                                <img src="images/rocket.png" alt="" class="best_icon">
+                                <img src="<?php echo bloginfo('template_url'); ?>/images/rocket.png" alt="" class="best_icon">
                                 <h3>Оперативность</h3>
                                 <p class="best_desc">
                                     Наличие возможностей и готовность реализовывать услуги в кратчайшее время, выходные и праздники. Предоставляем четкие и понятные алгоритмы, готовые оформленные документы, бланки, инструкции.
@@ -614,7 +493,7 @@
                                 </h2>
                             </div>
                             <div class="col-12 text-center best_block best_right">
-                                <img src="images/warrianty.png" alt="" class="best_icon">
+                                <img src="<?php echo bloginfo('template_url'); ?>/images/warrianty.png" alt="" class="best_icon">
                                 <h3>Гарантия</h3>
                                 <p class="best_desc">
                                     Наша компания имеет многолетний опыт позволяющий нам брать ответственность за результат нашей работы. Мы гарантируем 100% результат . В противном случае мы обязуемся вернуть Вам деньги.
@@ -655,7 +534,7 @@
                                 Вы оставляете заявку любым удобным для Вас способом
                             </p>
                             <span class="work_icon">
-                                <img src="images/work_1.png" alt="">
+                                <img src="<?php echo bloginfo('template_url'); ?>/images/work_1.png" alt="">
                             </span>
                         </div>
                     </div>
@@ -669,7 +548,7 @@
                                 Наш менеджер связывается с Вами для уточнения всех деталей
                             </p>
                             <span class="work_icon">
-                                <img src="images/work_2.png" alt="">
+                                <img src="<?php echo bloginfo('template_url'); ?>/images/work_2.png" alt="">
                             </span>
                         </div>
                     </div>
@@ -683,7 +562,7 @@
                                 Вы оплачиваете и подтверждаете полученный счет за услуги
                             </p>
                             <span class="work_icon">
-                                <img src="images/work_3.png" alt="">
+                                <img src="<?php echo bloginfo('template_url'); ?>/images/work_3.png" alt="">
                             </span>
                         </div>
                     </div>
@@ -697,7 +576,7 @@
                                 Мы подготавливаем полный пакет документов и регистрируем его в консульстве
                             </p>
                             <span class="work_icon">
-                                <img src="images/work_4.png" alt="">
+                                <img src="<?php echo bloginfo('template_url'); ?>/images/work_4.png" alt="">
                             </span>
                         </div>
                     </div>
@@ -709,7 +588,7 @@
                             <h3>Готово</h3>
                             <p>Вы получаете полностью готовые документы новой почтой</p>
                             <span class="last_stage_icon">
-                                <img src="images/work_5.png" alt="">
+                                <img src="<?php echo bloginfo('template_url'); ?>/images/work_5.png" alt="">
                             </span>
                         </div>
                     </div>
@@ -851,13 +730,13 @@
                     <div class="carousel-item active">
                         <div class="row">
                             <div class="col-12 text-center">
-                                <img src="images/quotes.png" alt="" class="quotes">
+                                <img src="<?php echo bloginfo('template_url'); ?>/images/quotes.png" alt="" class="quotes">
                             </div>
                             <div class="col-12 bbtn">
                                 <p class="testimonial">
                                     Моя мама ездила на работу в Германию сиделкой пол года назад, мы сначала пытались найти что-то сами через знакомых за границей , потом я начала искать варианты самостоятельно через интернет. Конечно очень недоверчиво отношусь к этим всем фирмам которые предлагают услуги по трудоустройству. Обзвонила кучу мест, в итоге адекватно и понятно разъяснили что да как в двух фирмах. Короче остановились на одной, фирма польская но есть офис в Украине мы приехали познакомились , нам предоставили все документы. Так что если компания честная всегда без затруднений отвечают на все вопросы. Мы взяли время на раздумья и решили что попробуем. Единственное что нас смущало, что мама плохо знала немецкий , на уровне школы. В фирме предложили пройти курсы чтобы освежить знания. После курсов мама поехала в Германию ухаживать за пожилой женщиной. Все было хорошо, вообще ни каких проблем. Заплатили, подсказали все. Правда я редко пишу отзывы но тут прямо захотелось, так как реально помогли , планируем ещё поехать. Всем рекомендую попробовать обратится в Twoj Biznes, я нашла их через сайт ещё попомоему есть у них фесбук
                                 </p>
-                                <img src="images/t1.png" alt="" class="testimonial_desc_img">
+                                <img src="<?php echo bloginfo('template_url'); ?>/images/t1.png" alt="" class="testimonial_desc_img">
                             </div>
                             <div class="col-12 text-center">
                                 <span class="top_line"></span>
@@ -869,13 +748,13 @@
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-12 text-center">
-                                <img src="images/quotes.png" alt="" class="quotes">
+                                <img src="<?php echo bloginfo('template_url'); ?>/images/quotes.png" alt="" class="quotes">
                             </div>
                             <div class="col-12 bbtn">
                                 <p class="testimonial">
                                     Моя мама ездила на работу в Германию сиделкой пол года назад, мы сначала пытались найти что-то сами через знакомых за границей , потом я начала искать варианты самостоятельно через интернет. Конечно очень недоверчиво отношусь к этим всем фирмам которые предлагают услуги по трудоустройству. Обзвонила кучу мест, в итоге адекватно и понятно разъяснили что да как в двух фирмах. Короче остановились на одной, фирма польская но есть офис в Украине мы приехали познакомились , нам предоставили все документы. Так что если компания честная всегда без затруднений отвечают на все вопросы. Мы взяли время на раздумья и решили что попробуем. Единственное что нас смущало, что мама плохо знала немецкий , на уровне школы. В фирме предложили пройти курсы чтобы освежить знания. После курсов мама поехала в Германию ухаживать за пожилой женщиной. Все было хорошо, вообще ни каких проблем. Заплатили, подсказали все. Правда я редко пишу отзывы но тут прямо захотелось, так как реально помогли , планируем ещё поехать. Всем рекомендую попробовать обратится в Twoj Biznes, я нашла их через сайт ещё попомоему есть у них фесбук
                                 </p>
-                                <img src="images/t1.png" alt="" class="testimonial_desc_img">
+                                <img src="<?php echo bloginfo('template_url'); ?>/images/t1.png" alt="" class="testimonial_desc_img">
                             </div>
                             <div class="col-12 text-center">
                                 <span class="top_line"></span>
@@ -887,13 +766,13 @@
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-12 text-center">
-                                <img src="images/quotes.png" alt="" class="quotes">
+                                <img src="<?php echo bloginfo('template_url'); ?>/images/quotes.png" alt="" class="quotes">
                             </div>
                             <div class="col-12 bbtn">
                                 <p class="testimonial">
                                     Моя мама ездила на работу в Германию сиделкой пол года назад, мы сначала пытались найти что-то сами через знакомых за границей , потом я начала искать варианты самостоятельно через интернет. Конечно очень недоверчиво отношусь к этим всем фирмам которые предлагают услуги по трудоустройству. Обзвонила кучу мест, в итоге адекватно и понятно разъяснили что да как в двух фирмах. Короче остановились на одной, фирма польская но есть офис в Украине мы приехали познакомились , нам предоставили все документы. Так что если компания честная всегда без затруднений отвечают на все вопросы. Мы взяли время на раздумья и решили что попробуем. Единственное что нас смущало, что мама плохо знала немецкий , на уровне школы. В фирме предложили пройти курсы чтобы освежить знания. После курсов мама поехала в Германию ухаживать за пожилой женщиной. Все было хорошо, вообще ни каких проблем. Заплатили, подсказали все. Правда я редко пишу отзывы но тут прямо захотелось, так как реально помогли , планируем ещё поехать. Всем рекомендую попробовать обратится в Twoj Biznes, я нашла их через сайт ещё попомоему есть у них фесбук
                                 </p>
-                                <img src="images/t1.png" alt="" class="testimonial_desc_img">
+                                <img src="<?php echo bloginfo('template_url'); ?>/images/t1.png" alt="" class="testimonial_desc_img">
                             </div>
                             <div class="col-12 text-center">
                                 <span class="top_line"></span>
@@ -905,13 +784,13 @@
                 </div>
                 <ol class="carousel-indicators">
                     <li data-target="#testimonialCarousel" data-slide-to="0" class="active people_img">
-                        <img src="images/t1.png" alt="" class="testimonial_img">
+                        <img src="<?php echo bloginfo('template_url'); ?>/images/t1.png" alt="" class="testimonial_img">
                     </li>
                     <li data-target="#testimonialCarousel" data-slide-to="1" class="people_img">
-                        <img src="images/t1.png" alt="" class="testimonial_img">
+                        <img src="<?php echo bloginfo('template_url'); ?>/images/t1.png" alt="" class="testimonial_img">
                     </li>
                     <li data-target="#testimonialCarousel" data-slide-to="2" class="people_img">
-                        <img src="images/t1.png" alt="" class="testimonial_img">
+                        <img src="<?php echo bloginfo('template_url'); ?>/images/t1.png" alt="" class="testimonial_img">
                     </li>
                 </ol>
                 <div class="controls">
@@ -942,7 +821,7 @@
                     <div class="adress_block">
                         <p class="block_title">
                             Адрес
-                            <span><img src="images/location.png" alt="" class="block_title_icon"></span>
+                            <span><img src="<?php echo bloginfo('template_url'); ?>/images/location.png" alt="" class="block_title_icon"></span>
                         </p>
                         <p class="block_desc">
                             Германия г. Эссен ул.Боклербаум 23/223
@@ -951,7 +830,7 @@
                     <div class="adress_block">
                         <p class="block_title">
                             Адрес
-                            <span><img src="images/location.png" alt="" class="block_title_icon"></span>
+                            <span><img src="<?php echo bloginfo('template_url'); ?>/images/location.png" alt="" class="block_title_icon"></span>
                         </p>
                         <p class="block_desc">
                             Польша г. Варшава ул.Хмельна 98/23
@@ -960,7 +839,7 @@
                     <div class="phone_block">
                         <p class="block_title">
                             Телефон
-                            <span><img src="images/phone.png" alt="" class="block_title_icon"></span>
+                            <span><img src="<?php echo bloginfo('template_url'); ?>/images/phone.png" alt="" class="block_title_icon"></span>
                         </p>
                         <p class="block_desc">
                             +48790490231<br>
@@ -970,7 +849,7 @@
                     <div class="email_block">
                         <p class="block_title">
                             Email
-                            <span><img src="images/email.png" alt="" class="block_title_icon"></span>
+                            <span><img src="<?php echo bloginfo('template_url'); ?>/images/email.png" alt="" class="block_title_icon"></span>
                         </p>
                         <p class="block_desc">
                             biuro@twojbiznes.info
@@ -999,121 +878,3 @@
         </div>
     </section>
     <!-- End Contacts -->
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="top">
-            <div class="container">
-                <div class="row footer_menu_block">
-                    <a href="#" class="footer_logo">
-                        <img src="images/main_logo.png" alt="" class="footer_logo_img">
-                    </a>
-                    <ul class="footer_menu">
-                        <li>
-                            <a href="#provide" class="footer_menu_link">Услуги</a>
-                        </li>
-                        <li>
-                            <a href="#best" class="footer_menu_link">Почему мы</a>
-                        </li>
-                        <li>
-                            <a href="#work" class="footer_menu_link">Как мы работаем</a>
-                        </li>
-                        <li>
-                            <a href="#about_us" class="footer_menu_link">О нас</a>
-                        </li>
-                        <li>
-                            <a href="#faq" class="footer_menu_link">Частые вопросы</a>
-                        </li>
-                        <li>
-                            <a href="#testimonials" class="footer_menu_link">Отзывы</a>
-                        </li>
-                        <li>
-                            <a href="#contacts" class="footer_menu_link">Контакты</a>
-                        </li>
-                    </ul>
-                    <div class="recall">
-                        <a href="#" class="recall_link" data-toggle="modal" data-target="#callbackmodal">Заказать обратный звонок</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bottom">
-            <div class="container">
-                <div class="row footer_menu_block">
-                    <div class="col-12">
-                        <p class="copyright">
-                            Twój Biznes © Copyright 2020. Разработано <a href="#" class="developer_link">SFdevelop</a>
-                        </p>
-                        <ul class="footer_social">
-                            <li>
-                                <a href="#" class="footer_social_link">
-                                    <img src="images/vk.png" alt="" class="social_img">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="footer_social_link">
-                                    <img src="images/fb.png" alt="" class="social_img">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="footer_social_link">
-                                    <img src="images/insta.png" alt="" class="social_img">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="footer_social_link">
-                                    <img src="images/tele.png" alt="" class="social_img">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="footer_social_link">
-                                    <img src="images/whats.png" alt="" class="social_img">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="footer_social_link">
-                                    <img src="images/imo.png" alt="" class="social_img">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End Footer -->
-
-    <!-- Modal -->
-    <!-- Modal -->
-    <div class="modal fade" id="callbackmodal" tabindex="-1" role="dialog" aria-labelledby="callbackmodalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-
-                <form class="faq_form">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h4 class="form_title text-center">
-                        Заказать обратный звонок
-                    </h4>
-                    <p class="form_desc text-center">
-                        Оставьте свои данные и мы обязательно перезвоним Вам
-                    </p>
-                    <input type="name" class="name" id="name" placeholder="Ваше имя">
-                    <input type="phone" class="phone" id="phone" placeholder="Ваш телефон">
-                    <p class="therms text-center">Нажав кнопку Вы соглашаетесь на обработку персональных данных.</p>
-                    <input type="button" class="confirm" value="Отправить">
-                </form>
-
-            </div>
-        </div>
-    </div>
-    <!-- End Modal -->
-
-    <!-- Scripts -->
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/viewportchecker.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
-</html>
